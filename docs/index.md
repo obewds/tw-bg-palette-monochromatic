@@ -11,9 +11,9 @@ This is an example GitHub Pages site and is NOT intended for actual use in real 
 :::
 
 
-# @obewds/vite-vue-ts-compo-pkg-starter
+# @obewds/tw-bg-palette-monochromatic
 
-Welcome to the docs page for OBE:WDS's `ViteVueTsCompoPkgStarter.vue` component for [Vue.js](https://vuejs.org/)!
+Welcome to the docs page for OBE:WDS's `TwBgPaletteMonochromatic.vue` component for [Vue.js](https://vuejs.org/)!
 
 
 
@@ -21,7 +21,7 @@ Welcome to the docs page for OBE:WDS's `ViteVueTsCompoPkgStarter.vue` component 
 ## Installation
 
 ```bash
-npm install @obewds/vite-vue-ts-compo-pkg-starter --save-dev
+npm install @obewds/tw-bg-palette-monochromatic --save-dev
 ```
 
 
@@ -36,7 +36,7 @@ npm install @obewds/vite-vue-ts-compo-pkg-starter --save-dev
 
 ```html{2}
 <template>
-    <ViteVueTsCompoPkgStarter/>
+    <TwBgPaletteMonochromatic/>
 </template>
 ```
 
@@ -47,7 +47,7 @@ npm install @obewds/vite-vue-ts-compo-pkg-starter --save-dev
 
 ```html{2}
 <script setup lang="ts">
-    import { ViteVueTsCompoPkgStarter } from '@obewds/vite-vue-ts-compo-pkg-starter'
+    import { TwBgPaletteMonochromatic } from '@obewds/tw-bg-palette-monochromatic'
 </script>
 ```
 
@@ -59,10 +59,10 @@ npm install @obewds/vite-vue-ts-compo-pkg-starter --save-dev
 ```html{3,6}
 <script lang="ts">
     import { defineComponent } from 'vue'
-    import { ViteVueTsCompoPkgStarter } from '@obewds/vite-vue-ts-compo-pkg-starter'
+    import { TwBgPaletteMonochromatic } from '@obewds/tw-bg-palette-monochromatic'
 
     export default defineComponent({
-        components: { ViteVueTsCompoPkgStarter }
+        components: { TwBgPaletteMonochromatic }
     })
 </script>
 ```
@@ -84,7 +84,7 @@ npm install @obewds/vite-vue-ts-compo-pkg-starter --save-dev
 
 ```html{2}
 <template>
-    <ViteVueTsCompoPkgStarter text="My text prop string"/>
+    <TwBgPaletteMonochromatic text="My text prop string"/>
 </template>
 ```
 
@@ -110,9 +110,9 @@ If both the `text` prop and `slot` content are used, then the `text` prop takes 
 
 ```html{2-4}
 <template>
-    <ViteVueTsCompoPkgStarter>
+    <TwBgPaletteMonochromatic>
         My slot content
-    </ViteVueTsCompoPkgStarter>
+    </TwBgPaletteMonochromatic>
 </template>
 ```
 
@@ -132,7 +132,7 @@ If both the `text` prop and `slot` content are used, then the `text` prop takes 
 ## Uninstall
 
 ```bash
-npm uninstall @obewds/vite-vue-ts-compo-pkg-starter
+npm uninstall @obewds/tw-bg-palette-monochromatic
 ```
 
 
