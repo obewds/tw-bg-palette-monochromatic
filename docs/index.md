@@ -6,14 +6,13 @@ head:
 ---
 
 
-::: danger
-This is an example GitHub Pages site and is NOT intended for actual use in real projects/products!
-:::
 
 
 # @obewds/tw-bg-palette-monochromatic
 
-Welcome to the docs page for OBE:WDS's `TwBgPaletteMonochromatic.vue` component for [Vue.js](https://vuejs.org/)!
+Welcome to the docs page for OBE:WDS's `twBgPaletteMonochromatic` component for [Vue.js](https://vuejs.org/)!
+
+<br>
 
 
 
@@ -24,107 +23,59 @@ Welcome to the docs page for OBE:WDS's `TwBgPaletteMonochromatic.vue` component 
 npm install @obewds/tw-bg-palette-monochromatic --save-dev
 ```
 
-
-
-
-## Import Component
+<br>
 
 
 
 
-### Template syntax
+## Object Schema
 
-```html{2}
-<template>
-    <TwBgPaletteMonochromatic/>
-</template>
+The object returned when importing Tailwind CSS background monochromatic color palette has the following schema:
+
+```javascript
+{
+    'monochromatic': {
+        colors: {
+            'default': '',
+            'error': '...',
+            'primary': '...',
+            'secondary': '...',
+            'success': '...',
+        },
+    },
+}
 ```
 
+<br>
 
 
 
-### Script setup syntax
 
-```html{2}
+
+## Use Example
+
+```html{3,8,16}
 <script setup lang="ts">
-    import { TwBgPaletteMonochromatic } from '@obewds/tw-bg-palette-monochromatic'
-</script>
-```
 
+    import { twBgPaletteMonochromatic } from '@obewds/tw-bg-palette-monochromatic'
 
-
-
-### Composition API syntax
-
-```html{3,6}
-<script lang="ts">
-    import { defineComponent } from 'vue'
-    import { TwBgPaletteMonochromatic } from '@obewds/tw-bg-palette-monochromatic'
-
-    export default defineComponent({
-        components: { TwBgPaletteMonochromatic }
+    const props = defineProps({
+        bgClasses: {
+            type: String,
+            default: twBgPaletteMonochromatic.monochromatic.colors.primary,
+        },
     })
+
 </script>
-```
 
-
-
-
-## Props
-
-
-
-
-### text
-
-:white_check_mark: - Type `String`  
-:x: - Not Required  
-:x: - Doesn't Validate
-
-
-```html{2}
 <template>
-    <TwBgPaletteMonochromatic text="My text prop string"/>
+
+    <div :class="bgClasses">
+        {{ bgClasses }}
+    </div>
+
 </template>
 ```
-
-Outputs:
-
-```html
-<div>My text prop string</div>
-```
-
-::: warning
-If both the `text` prop and `slot` content are used, then the `text` prop takes precidence and the `slot` content will **NOT** render!
-:::
-
-
-
-
-## Slots
-
-
-
-
-### default
-
-```html{2-4}
-<template>
-    <TwBgPaletteMonochromatic>
-        My slot content
-    </TwBgPaletteMonochromatic>
-</template>
-```
-
-Outputs:
-
-```html
-<div>My slot content</div>
-```
-
-::: danger
-If both the `text` prop and `slot` content are used, then the `text` prop takes precidence and the `slot` content will **NOT** render!
-:::
 
 
 

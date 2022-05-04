@@ -1,1 +1,1 @@
-export { default as TwBgPaletteMonochromatic } from './components/TwBgPaletteMonochromatic.vue'
+export { default as twBgPaletteMonochromatic } from './data/tw-bg-palette-monochromatic'

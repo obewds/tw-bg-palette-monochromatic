@@ -1,44 +1,39 @@
 // ./tests/TwBgPaletteMonochromatic.test.js
 
-import { mount } from '@vue/test-utils'
-import TwBgPaletteMonochromatic from '../src/components/TwBgPaletteMonochromatic.vue'
+import { twBgPaletteMonochromatic } from '../src/index'
 
 
 
-test('TwBgPaletteMonochromatic.vue component mounts successfully', async () => {
+test('twBgPaletteMonochromatic component returns a truthy value', async () => {
 
-    expect(TwBgPaletteMonochromatic).toBeTruthy()
+    expect(twBgPaletteMonochromatic).toBeTruthy()
 
 })
 
 
 
-test('TwBgPaletteMonochromatic.vue component text prop accepts a string value', async () => {
+test('twBgPaletteMonochromatic.monochromatic component returns an object with a truthy monochromatic property', async () => {
 
-    const testString = 'Test String Value'
+    expect(twBgPaletteMonochromatic.monochromatic).toBeTruthy()
 
-    const wrapper = mount(TwBgPaletteMonochromatic, {
-        props: {
-            text: testString
-        },
-    })
-
-    expect(wrapper.text()).toContain(testString)
-    
 })
 
 
 
-test('TwBgPaletteMonochromatic.vue component default slot accepts an element node with a child text node', async () => {
+test('twBgPaletteMonochromatic.monochromatic.colors component returns an object with a truthy colors property', async () => {
 
-    const testStrLiteral = `<div>Test String Value</div>`
+    expect(twBgPaletteMonochromatic.monochromatic.colors).toBeTruthy()
 
-    const wrapper = mount(TwBgPaletteMonochromatic, {
-        slots: {
-            default: testStrLiteral
-        },
-    })
+})
 
-    expect(wrapper.html()).toContain(testStrLiteral)
-    
+
+
+test('twBgPaletteMonochromatic component returns an object with the standard five default color names', async () => {
+
+    expect(twBgPaletteMonochromatic.monochromatic.colors['default']).toBeTruthy()
+    expect(twBgPaletteMonochromatic.monochromatic.colors['error']).toBeTruthy()
+    expect(twBgPaletteMonochromatic.monochromatic.colors['primary']).toBeTruthy()
+    expect(twBgPaletteMonochromatic.monochromatic.colors['secondary']).toBeTruthy()
+    expect(twBgPaletteMonochromatic.monochromatic.colors['success']).toBeTruthy()
+
 })
