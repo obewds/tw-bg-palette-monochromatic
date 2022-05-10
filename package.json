@@ -40,9 +40,6 @@
     "init:as": "node scripts/init.js",
     "delete:init:as": "npx rimraf scripts/init.js"
   },
-  "peerDependencies": {
-    "vue": "^3.2.33"
-  },
   "devDependencies": {
     "@obewds/obewds-tw-config": "^0.4.5",
     "@rollup/plugin-typescript": "^8.3.2",
