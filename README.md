@@ -13,6 +13,8 @@ The @obewds/tw-bg-palette-monochromatic modular design system component for Vue.
 
 Check out the [official docs](https://obewds.github.io/tw-bg-palette-monochromatic/) for this component for more details!
 
+Or check out the [CHANGELOG](https://github.com/obewds/tw-bg-palette-monochromatic/blob/main/CHANGELOG.md) for the code base!
+
 <br>
 
 
