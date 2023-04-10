@@ -1,3 +1,9 @@
+###  ⚠️ Project Depreciated ⚠️
+
+**This project has been depreciated. Use [VueVentus](https://vueventus.com/) (via [github](https://github.com/obewds/vueventus) or via [npm](https://www.npmjs.com/package/@obewds/vueventus)), which is the result of this project, and has this functionality along with much more.**
+
+---
+
 # tw-bg-palette-monochromatic
 
 The @obewds/tw-bg-palette-monochromatic modular design system component for Vue.js
